@@ -1,0 +1,17 @@
+rename:
+  firstName: given_name
+  lastName: family_name
+
+dateConvert:
+  birthDate:
+    from: "yyyy-MM-dd"
+    to: "dd/MM/yyyy"
+
+filters:
+  - field: "age"
+    operator: ">"
+    value: 18
+
+computedFields:
+  fullName:
+    expression: "${given_name} + ' ' + ${family_name}"
