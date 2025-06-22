@@ -1,5 +1,5 @@
 # ETL Tool (Spring Boot + MySQL)
-Docker is optional
+
 This project is a lightweight ETL (Extract, Transform, Load) service built with Spring Boot and MySQL, deployable as a Docker container.
 
 ## 🚀 Setup Instructions
@@ -11,7 +11,21 @@ This project is a lightweight ETL (Extract, Transform, Load) service built with 
 - MySQL database running and accessible
 
 ## 🛠 Step-by-Step Setup
+## Run the Spring Boot ETL App Locally (Without Docker)
+### 1. **Build the Spring Boot JAR**
+```bash
+mvn clean package
+```
+This creates the file:
+```
+target/etl-tool-1.0.0.jar
+```
+### 2.Run the Spring Boot application using the Java command:
+```bash
+java -jar target/etl-tool-1.0.0.jar
+...
 
+## Run the Spring Boot ETL App With Docker
 ### 1. **Build the Spring Boot JAR**
 
 ```bash
